@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+    database:
+        container_name: quiz_database
+        image: postgres
+        volumes:
+            - ./.pgdata:/var/lib/postgresql/data
+        environment:
+            - LC_ALL=C.UTF-8
+            - POSTGRES_DB=quiz
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - 5433:5432
+
