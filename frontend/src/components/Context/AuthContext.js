@@ -13,7 +13,7 @@ function AuthProvider({ children }) {
     const user = JSON.parse(localStorage.getItem("user"));
 
     if (user && user.token) {
-      api.defaults.headers.Authorization = `Bearer ${user.token}`;
+      api.defaults.headers.Authorization = `Token ${user.token}`;
       setAuthenticated(true);
     }
 
@@ -31,7 +31,7 @@ function AuthProvider({ children }) {
       .then((res) => {
         var user = res.data;
         localStorage.setItem("user", JSON.stringify(user));
-        api.defaults.headers.Authorization = `Bearer ${user.token}`;
+        api.defaults.headers.Authorization = `Token ${user.token}`;
         setAuthenticated(true);
         history.push("/home");
       })

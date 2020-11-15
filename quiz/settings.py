@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "corsheaders",
     "quiz.base",
+    "quiz.quizzes",
 ]
 
 MIDDLEWARE = [

@@ -18,8 +18,10 @@ from django.urls import include, path
 from rest_framework import routers
 
 from quiz.base.views import CustomObtainAuthToken
+from quiz.quizzes import views
 
 router = routers.DefaultRouter()
+router.register(r"quizzes", views.QuizViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
