@@ -40,8 +40,15 @@ function AuthProvider({ children }) {
       });
   }
 
+  function handleLogout() {
+    localStorage.removeItem("user");
+    setAuthenticated(false);
+  }
+
   return (
-    <Context.Provider value={{ loading, authenticated, handleLogin }}>
+    <Context.Provider
+      value={{ loading, authenticated, handleLogin, handleLogout }}
+    >
       {children}
     </Context.Provider>
   );
