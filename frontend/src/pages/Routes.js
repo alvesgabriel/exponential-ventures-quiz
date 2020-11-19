@@ -8,6 +8,7 @@ import history from "../services/history";
 
 import Login from "./Login";
 import Home from "./Home";
+import Questions from "./Questions";
 
 function CustonRoute({ isPrivate, ...rest }) {
   const { loading, authenticated } = useContext(Context);
@@ -34,6 +35,7 @@ class Routes extends React.Component {
         <Switch>
           <CustonRoute path="/login" component={Login} />
           <CustonRoute path="/home" isPrivate component={Home} />
+          <CustonRoute path="/question" isPrivate component={Questions} />
         </Switch>
       </Router>
     );

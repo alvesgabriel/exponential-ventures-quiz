@@ -15,17 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from rest_framework import routers
+# from rest_framework import routers
+from rest_framework_nested import routers
 
 from quiz.base.views import CustomObtainAuthToken
 from quiz.quizzes import views
 
-router = routers.DefaultRouter()
+router = routers.SimpleRouter()
 router.register(r"quizzes", views.QuizViewSet)
+
+quizzes_router = routers.NestedDefaultRouter(router, r"quizzes", lookup="quiz")
+quizzes_router.register(r"questions", views.QuestionViewSet, basename="questions")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include(router.urls)),
+    path("", include(quizzes_router.urls)),
     path("login/", CustomObtainAuthToken.as_view(), name="login_token"),
     path("", include("rest_framework.urls", namespace="rest_framework")),
 ]

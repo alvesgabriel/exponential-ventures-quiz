@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "77391a5708e909d1a93de8bbeafac5dec95e5891952a3db371aa1fa999cee054"
+            "sha256": "fa21471c2d1ddefd7f3f548f02c0753c3c078746e50bbd2d5094ca71312c4ec5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -47,9 +47,9 @@
         },
         "cloudinary": {
             "hashes": [
-                "sha256:aee360d0d5bfb285d98fe64711f43f52bf03c237a446ce0c2a09131dca7f596f"
+                "sha256:4357892948134d1a9345442e86030743338b25ff1be69786fb2251363f9c57e3"
             ],
-            "version": "==1.22.0"
+            "version": "==1.23.0"
         },
         "decorator": {
             "hashes": [
@@ -114,6 +114,14 @@
             "index": "pypi",
             "version": "==2.4.0"
         },
+        "django-nested-admin": {
+            "hashes": [
+                "sha256:2e6706050057f5dc5664bc90d034d4ed9e3ae032ead6b063da9982c9e45ab7f3",
+                "sha256:7ec58af67107e6d7b2d0fd4fe03629eff8f7957c4aef5033c4700da1bd2d7870"
+            ],
+            "index": "pypi",
+            "version": "==3.3.2"
+        },
         "django-ordered-model": {
             "hashes": [
                 "sha256:29af6624cf3505daaf0df00e2df1d0726dd777b95e08f304d5ad0264092aa934",
@@ -128,6 +136,14 @@
             ],
             "index": "pypi",
             "version": "==3.12.2"
+        },
+        "drf-nested-routers": {
+            "hashes": [
+                "sha256:52be428b046078ed21e9137167035cc2eb8daad036900fd2235ce026306e143a",
+                "sha256:e043fc937f94ac462a92d2d9fc9a7e55710a67164b558442adfe9634fc519c3b"
+            ],
+            "index": "pypi",
+            "version": "==0.92.1"
         },
         "gunicorn": {
             "hashes": [
@@ -270,6 +286,13 @@
             "index": "pypi",
             "version": "==3.3"
         },
+        "python-monkey-business": {
+            "hashes": [
+                "sha256:6d4cf47f011945db838ccf04643acd49b82f7ad6ab7ecba4c8165385687a828a",
+                "sha256:9976522989766f00b2aaa24ec96eacb91a6de7b7001d1452079323b071988e0e"
+            ],
+            "version": "==1.0.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:3e6b7dd2d1e0a59084bcee14a17af60c5c562cdc16d828e8eba2e683d3a7e268",
@@ -287,11 +310,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:81d7a5d8ca0b13a16666e8280127b004565aa988bfeec6481e98a8601804b215",
-                "sha256:fd48f627945511c140546939b4d73815be4860cd1d2b9149577d7f6563e7bd60"
+                "sha256:1052f0ed084e532f66cb3e4ba617960d820152aee8b93fc6c05bd53861768c1c",
+                "sha256:4c42910a55a6b1fe694d5e4790d5188d105d77b5a6346c1c64cbea8c06c0e8b7"
             ],
             "index": "pypi",
-            "version": "==0.19.3"
+            "version": "==0.19.4"
         },
         "six": {
             "hashes": [

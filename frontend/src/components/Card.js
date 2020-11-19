@@ -5,6 +5,8 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+import history from "../services/history";
+
 const useStyles = makeStyles({
   root: {
     minWidth: 300,
@@ -22,9 +24,17 @@ const useStyles = makeStyles({
 export default function SimpleCard(data) {
   const classes = useStyles();
 
+  function handleQuestion(quiz) {
+    history.push("question/", quiz);
+  }
+
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea
+        onClick={(event) => {
+          handleQuestion(data.quiz);
+        }}
+      >
         <CardContent>
           <Typography variant="h5" component="h2">
             {data.quiz.name}
