@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "cloudinary",
     "django_extensions",
     "corsheaders",
+    "nested_admin",
     "quiz.base",
     "quiz.quizzes",
 ]

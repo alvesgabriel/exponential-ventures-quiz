@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.question {
+    margin: 10px,
+}
+
+.question-button {
+    margin: auto;
+}

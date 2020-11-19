@@ -28,6 +28,8 @@ markdown = "*"
 django-filter = "*"
 dj3-cloudinary-storage = "*"
 django-cors-headers = "*"
+drf-nested-routers = "*"
+django-nested-admin = "*"
 
 [requires]
 python_version = "3.8"
