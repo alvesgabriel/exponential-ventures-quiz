@@ -139,11 +139,10 @@
         },
         "drf-nested-routers": {
             "hashes": [
-                "sha256:52be428b046078ed21e9137167035cc2eb8daad036900fd2235ce026306e143a",
-                "sha256:e043fc937f94ac462a92d2d9fc9a7e55710a67164b558442adfe9634fc519c3b"
+                "sha256:6a11c3396808af015f280f1b4ddac9303ddfb8665d3c8f03d957c46f1d8ade04",
+                "sha256:93e97833d53265d443aff76ff780c66ecdedef862a2ec41da0acdf8077182d28"
             ],
-            "index": "pypi",
-            "version": "==0.92.1"
+            "version": "==0.92.4"
         },
         "gunicorn": {
             "hashes": [
