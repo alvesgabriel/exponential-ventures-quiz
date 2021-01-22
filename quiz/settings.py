@@ -120,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = "pt-br"
+LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "America/Sao_Paulo"
 
@@ -168,3 +168,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
+
+if DEBUG:
+    REST_FRAMEWORK.get('DEFAULT_AUTHENTICATION_CLASSES').append('rest_framework.authentication.SessionAuthentication')

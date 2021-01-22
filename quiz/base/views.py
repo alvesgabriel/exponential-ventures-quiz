@@ -9,4 +9,9 @@ class CustomObtainAuthToken(ObtainAuthToken):
         response = super(CustomObtainAuthToken, self).post(request, *args, **kwargs)
         token = Token.objects.get(key=response.data['token'])
         user = User.objects.get(id=token.user_id)
-        return Response({'token': token.key, 'user_id': user.id, 'email': user.email, 'name': user.first_name})
+        return Response({
+            'token': token.key,
+            'user_id': user.id,
+            'email': user.email,
+            'name': user.first_name,
+        })
