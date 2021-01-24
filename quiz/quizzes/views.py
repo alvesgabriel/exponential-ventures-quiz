@@ -1,18 +1,16 @@
 from quiz.quizzes.models import Question, Quiz
 from quiz.quizzes.serializers import QuestionSerializer, QuizSerializer
-from rest_framework import permissions, viewsets
+from rest_framework import generics, permissions
 
 
-class QuizViewSet(viewsets.ModelViewSet):
+class QuizViewSet(generics.ListAPIView):
     queryset = Quiz.objects.all().order_by("created")
     serializer_class = QuizSerializer
-    allowed_methods = ("GET",)
     permission_classes = (permissions.IsAuthenticated,)
 
 
-class QuestionViewSet(viewsets.ModelViewSet):
+class QuestionViewSet(generics.ListAPIView):
     serializer_class = QuestionSerializer
-    allowed_methods = ("GET",)
     permission_classes = (permissions.IsAuthenticated,)
 
     def get_queryset(self):
