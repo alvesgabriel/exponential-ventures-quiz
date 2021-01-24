@@ -4,7 +4,7 @@ from django.db import models
 class Quiz(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    created = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
 
 
 class Question(models.Model):
@@ -22,7 +22,7 @@ class Question(models.Model):
     answer4 = models.CharField(max_length=255)
     right_answer = models.IntegerField(choices=ANSWER_CHOICES)
     order = models.PositiveIntegerField()
-    created = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ("order",)

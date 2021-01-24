@@ -1,13 +1,6 @@
 import pytest
 from django.urls import reverse
-from model_bakery import baker
-from quiz.quizzes import models
 from rest_framework.status import HTTP_401_UNAUTHORIZED
-
-
-@pytest.fixture
-def questions(quiz):
-    return baker.make(models.Question, _quantity=10, quiz=quiz)
 
 
 @pytest.fixture

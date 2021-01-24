@@ -1,11 +1,11 @@
 """quiz URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information please see:
+The `urlpatterns` list routes URLs to quizzes. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+    2. Add a URL to urlpatterns:  path('', quizzes.home, name='home')
 Class-based views
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
@@ -19,11 +19,9 @@ from django.urls import include, path
 from quiz.base.views import CustomObtainAuthToken
 
 urlpatterns = [
-    path("", include("rest_framework.urls", namespace="rest_framework")),
-    path("login/token/", CustomObtainAuthToken.as_view(), name="login_token"),
-    path("admin/", admin.site.urls),
     path("quizzes/", include('quiz.quizzes.urls')),
+    path("quizzes/", include('quiz.answers.urls')),
+    path("admin/", admin.site.urls),
+    path("login/token/", CustomObtainAuthToken.as_view(), name="login_token"),
+    path("", include("rest_framework.urls", namespace="rest_framework")),
 ]
-
-
-print(urlpatterns)

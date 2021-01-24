@@ -9,6 +9,16 @@ class QuizSerializer(serializers.ModelSerializer):
 
 
 class QuestionSerializer(serializers.ModelSerializer):
+    quiz = QuizSerializer()
+
     class Meta:
         model = Question
-        fields = "__all__"
+        fields = (
+            'quiz',
+            'asking',
+            'answer1',
+            'answer2',
+            'answer3',
+            'answer4',
+            'order',
+        )

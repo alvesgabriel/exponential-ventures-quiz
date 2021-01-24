@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "nested_admin",
     "quiz.base",
     "quiz.quizzes",
+    "quiz.answers",
 ]
 
 MIDDLEWARE = [
