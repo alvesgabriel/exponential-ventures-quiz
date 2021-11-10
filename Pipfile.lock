@@ -48,9 +48,9 @@
         },
         "cloudinary": {
             "hashes": [
-                "sha256:79a903b59a95e66076adffa4e848aa41e2d41f33edad2b2233b158597cc8f372"
+                "sha256:a0e3635e81bea2ccff807a4f44b4603bd5815248f0191393458d4aa5ceeef172"
             ],
-            "version": "==1.24.0"
+            "version": "==1.27.0"
         },
         "decorator": {
             "hashes": [
