@@ -188,11 +188,10 @@
         },
         "markdown": {
             "hashes": [
-                "sha256:5d9f2b5ca24bc4c7a390d22323ca4bad200368612b5aaa7796babf971d2b2f18",
-                "sha256:c109c15b7dc20a9ac454c9e6025927d44460b85bd039da028d85e2b6d0bcc328"
+                "sha256:0d2d09f75cb8d1ffc6770c65c61770b23a61708101f47bda416a002a0edbc480",
+                "sha256:26e9546bfbcde5fcd072bd8f612c9c1b6e2677cb8aadbdf65206674f46dde069"
             ],
-            "index": "pypi",
-            "version": "==3.3.3"
+            "version": "==3.3.5"
         },
         "parso": {
             "hashes": [
