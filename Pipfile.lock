@@ -117,11 +117,10 @@
         },
         "django-nested-admin": {
             "hashes": [
-                "sha256:440d06055d5c114b354c6bbd040ab878a1bfbea02692cb40ec8fd1e5a071e99b",
-                "sha256:f1773c4d1be0a19e4b7a510734e88b81f551f831ed7b0641f63ad13cef3ee08c"
+                "sha256:c6852c5ac632f4e698b6beda455006fd464c852459e5e858a6db832cdb23d9e1",
+                "sha256:fbcf20d75a73dcbcc6285793ff936eff8df4deba5b169e0c1ab765394c562805"
             ],
-            "index": "pypi",
-            "version": "==3.3.3"
+            "version": "==3.4.0"
         },
         "django-ordered-model": {
             "hashes": [
