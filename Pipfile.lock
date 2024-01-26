@@ -384,11 +384,8 @@
             "version": "==20.3.0"
         },
         "black": {
-            "hashes": [
-                "sha256:1c02557aa099101b9d21496f8a914e9ed2222ef70336404eeeac8edba836fbea"
-            ],
-            "index": "pypi",
-            "version": "==20.8b1"
+            "hashes": [],
+            "version": "==24.1.0"
         },
         "certifi": {
             "hashes": [
