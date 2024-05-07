@@ -76,12 +76,8 @@
             "version": "==0.0.3"
         },
         "django": {
-            "hashes": [
-                "sha256:2d78425ba74c7a1a74b196058b261b9733a8570782f4e2828974777ccca7edf7",
-                "sha256:efa2ab96b33b20c2182db93147a0c3cd7769d418926f9e9f140a60dca7c64ca9"
-            ],
-            "index": "pypi",
-            "version": "==3.1.5"
+            "hashes": [],
+            "version": "==5.0.6"
         },
         "django-cors-headers": {
             "hashes": [
@@ -478,12 +474,8 @@
             "version": "==5.3.1"
         },
         "django": {
-            "hashes": [
-                "sha256:2d78425ba74c7a1a74b196058b261b9733a8570782f4e2828974777ccca7edf7",
-                "sha256:efa2ab96b33b20c2182db93147a0c3cd7769d418926f9e9f140a60dca7c64ca9"
-            ],
-            "index": "pypi",
-            "version": "==3.1.5"
+            "hashes": [],
+            "version": "==5.0.6"
         },
         "flake8": {
             "hashes": [
