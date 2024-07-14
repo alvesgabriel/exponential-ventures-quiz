@@ -116,12 +116,8 @@
             "version": "==2.4.0"
         },
         "django-nested-admin": {
-            "hashes": [
-                "sha256:440d06055d5c114b354c6bbd040ab878a1bfbea02692cb40ec8fd1e5a071e99b",
-                "sha256:f1773c4d1be0a19e4b7a510734e88b81f551f831ed7b0641f63ad13cef3ee08c"
-            ],
-            "index": "pypi",
-            "version": "==3.3.3"
+            "hashes": [],
+            "version": "==4.1.0"
         },
         "django-ordered-model": {
             "hashes": [
