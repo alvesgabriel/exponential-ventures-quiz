@@ -290,11 +290,8 @@
             "version": "==3.4"
         },
         "python-monkey-business": {
-            "hashes": [
-                "sha256:6d4cf47f011945db838ccf04643acd49b82f7ad6ab7ecba4c8165385687a828a",
-                "sha256:9976522989766f00b2aaa24ec96eacb91a6de7b7001d1452079323b071988e0e"
-            ],
-            "version": "==1.0.0"
+            "hashes": [],
+            "version": "==1.1.0"
         },
         "pytz": {
             "hashes": [
